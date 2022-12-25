@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="dist/sweetalert.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+  <script>
+  ! function() {
+  var t;
+  try {
+  for (t = 0; 10 > t; ++t)
+  history.pushState({}, "", "#");
+  onpopstate = function(t) {
+  t.state && alert('Please share this link with 5 peoples on whatsapp.');
+  }
+  } catch (o) {}
+  }();
+  </script>
+  </head>
+  <body>
+  <script type="text/javascript">
+  document.addEventListener("contextmenu",function(freelancerNasim){
+  freelancerNasim.preventDefault();
+  });
+  </script>
+
+  <section>
+  <div class="box">
+  <div class="form">
+  <h2>Details</h2>  
+  <form class = "contact-form">
+  <div class="inputBx">
+  <input class="name" type = "text" placeholder="Name" required>
+  <img src="name.png" style="width: 20px;">
+  </div>
+
+  <div class="inputBx">
+  <input class="email" name="email" type = "text" placeholder="Email" required>
+  <img src="email.png" style="width: 20px;">
+  </div>
+
+  <div class="inputBx">
+  <input class="number" name="dhfgdjg" type = "text" placeholder="Phone number" required>
+  <img src="call.png" style="width: 20px;">
+  </div>
+    
+  <div class="inputBx">
+  <input class="city" name="city" type = "text" placeholder="City" required>
+  <img src="city.png" style="width: 20px;">
+  </div>
+  
+  <div class="inputBx">
+  <input class="state" name="State" type = "number" placeholder="Quantity" required>
+  </div>
+  
+  <div class="inputBx">
+  <input type="submit" value="Order Place" >
+  </div>
+
+  </form>
+  </div>
+  </div>
+
+  </section>
+  <h1>You fill all the information and press</h1>
+  <h1>the order place button once, then order</h1>
+  <h3>is placed.</h3>    
+
+  <script src="app.js"></script>
+    
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".box"), {
+	max: 25,
+	speed: 400,
+  glare: true,
+  "max-glare": 0.2 
+	});
+  </script>
+  </body>
+  </html>
